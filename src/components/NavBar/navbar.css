@@ -1,0 +1,100 @@
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    /* position sticky by5leh yfdl m3ah tol mahwa nazl  */
+    z-index: 3;
+    /* z index msa2ol an by5ly swra wra kol 7aga  */
+    top: 0;
+    background:rgb(30, 30, 30) ;
+}
+/* @media screen and (max-width:530px) {
+    .navbar{
+        padding: 1rem 2rem;
+    }
+    
+} */
+.logo{
+   object-fit: cover;
+   height: 3rem;
+   width: 4rem;
+}
+.desktoplistmenuitem{
+    margin: 1rem;
+    cursor: pointer;
+}
+.desktoplistmenuitem:hover{
+    color: yellow;
+   padding-bottom: 0.5rem;
+   border-bottom: .2rem solid yellow; 
+
+}
+.desktopmenubtn{
+    background-color: azure;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    
+}
+
+.desktopmenuimg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+
+}
+.active{
+    color:yellow;
+    border-bottom: 3px solid yellow;
+    padding-bottom: .5rem;
+
+
+    
+}
+.navmenu{
+    position: absolute;
+    top:4rem;
+    right:2rem;
+    z-index: 2;
+    flex-direction: column;
+    padding: .5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40 40 40 );
+    border-radius: 1rem;
+}
+.listitem{
+    color:white;
+    padding: .5rem 3rem;
+    margin: .25rem;
+    background: rgb(30, 30, 30);
+}
+.mobmenu{
+    object-fit: cover;
+    height: 1.8rem;
+    display: none;
+
+}
+@media screen and (max-width:720px){
+    .mobmenu{
+        display: flex;
+    }
+    .desktopmenu{
+        display: none;
+    }
+    .desktopmenubtn{
+        display: none;
+    }
+    
+}
